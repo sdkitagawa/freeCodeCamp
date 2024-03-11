@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/styles.css" />
+      <title>Certification Project 1</title>
+    </head>
+    <body>
+      <main>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thanks for your time</p>
+          <form method="POST" id="survey-form" action ="#">
+              <label for="name" id="name-label" class="formLabels">Name: <input id="name" type="text" placeholder="Your name here" class="input-field" required /></label>
+              <label for="email" id="email-label" class="formLabels">E-mail: <input id="email" type="email" placeholder ="email@domain.com" class="input-field" required /></label>
+              <label for="number" id="number-label" class="formLabels">User: <input id="number" type="number" placeholder="Your username" class="input-field" min="1" max="11" required /></label>
+              <label for="radio-buttons" class="formLabels ">Did anyone recommend this site to you?<label/>
+              <br>
+                <label for="yes" class="formLabels"><input type="radio" id="yes" value="yes" name="same-name" class="input-radio" checked />Yes</label>
+                <label for="no" class="formLabels"><input type="radio" id="no" value="no" name="same-name" class="input-radio" />No</label>
+              <label class="formLabels">Did you like this dropdown Menu?
+                  <select class="input-selector" required>
+                    <option disabled="" selected="" value="">Select an option</option>
+                    <option value="Option 1">Yes</option>
+                    <option value="Option 2">No</option>
+                  </select>
+                </label>
+                <label for="checkbox-feedback" class="formLabels">How did you end up on this website?</label>
+                <label for="facebook">Facebook<input type="checkbox" value="facebook" id="facebook" class="input-checkbox" /></label>
+                <label for="instagram">Instagram<input type="checkbox" value="instagram" id="instagram" class="input-checkbox" /></label>
+                <label for="twitter">Twitter<input type="checkbox" value="twitter" id="twitter" class="input-checkbox" /></label>
+                <label for="tiktok">TikTok<input type="checkbox" value="tiktok" id="tiktok" class="input-checkbox" /></label>
+              <label for="comments" class="formLabels">Let us know your feedback:
+                <textarea placeholder="Insert your comments here..." id="comments" class="input-textarea"></textarea>
+              </label>
+              <input type="submit" value="Submit" id="submit" class="submit-button" /></in>
+          </form>
+      </main>
+    </body>
+  </html>

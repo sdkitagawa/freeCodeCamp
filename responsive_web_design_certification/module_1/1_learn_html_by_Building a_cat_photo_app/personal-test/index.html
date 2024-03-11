@@ -1,0 +1,103 @@
+<!--
+    Objectives:
+    - Use:
+        - Main
+        - Section
+        - Figure
+        - Ficaption
+        - Fieldset
+        - Legend
+        - Form (with attributes like action)
+        - Button (with attributes like type → Submit)
+        - Label
+        - Input (with attributes like, placeholder, value, id, name, type → checkbox, radio)
+        - Img (with attributes, like alt), Footer.
+-->
+
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Microsoft Recruitment Form</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/512px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft Logo">
+                    <figcaption>We <strong>believe</strong> in what people make <strong>possible</strong>.</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h1>Microsoft Recruitment Form</h1>
+                <p>Welcome to the Microsoft Recruitment System form.</p>
+            </section>
+            <section>
+                <label>Search:</label>
+                <br><br>
+                <input type="search" placeholder="Looking for something?">
+            </section>
+            <br>
+            <section>
+                    <form action="userInfo.html">
+                        <fieldset>
+                            <legend>Full name?</legend>
+                            <input type="text" placeholder="Bill Gates" id="fullname">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Pick your favorite color:</legend>
+                            <input type="color" id="favcolor" value="favcolor">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Birth date:</legend>
+                            <input type="date" id="birthdate" value="birthdate">
+                        </fieldset>
+                        <fieldset>
+                            <legend>E-mail for contact:</legend>
+                            <input type="email" placeholder="your-email@domain.com" id="email" >
+                        </fieldset>
+                        <fieldset>
+                            <legend>Link of your certification uploaded on <em><a href="https://www.bit.ly">Bit.ly</a></em>:</legend>
+                            <input type="url" id="link" placeholder="https://bit.ly/xXyY">
+                        </fieldset>
+                        <fieldset>
+                            <legend>CV:</legend>
+                            <input type="file" id="cv" value="cv">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Insert your telephone number:</legend>
+                            <input type="tel" placeholder="+XX (XXX) XXXX-XXXX" id="cel">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Why are you trying to applying for this job?</legend>
+                            <label><input type="radio" id="beta" name="options" value="beta">I'm a Beta Tester</label>
+                            <br><br>
+                            <label><input type="radio" id="gamedev" name="options" value="gamedev">I'm a Game Developer'</label>
+                            <br><br>
+                            <label><input type="radio" id="lovegames" name="options" value="lovegames">I love video games!</label>
+                            <br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>How much do you like Microsoft?</legend>
+                            <input type="range" id="msappreciation" value="msappreciation">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Schedule your live coding interview:</legend>
+                            <input type="time" id="hour" value="hour">
+                            <input type="week" id="week" value="week">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Confirm your password:</legend>
+                            <input type="password" placeholder="Your password" id="password">
+                            <br>
+                            <br>
+                            <button type="submit">Submit</button>
+                        </fieldset>
+                    </form>
+            </section>
+        </main>
+        <footer>
+            <p><a href="https://www.microsoft.com/">© Microsoft 2023</a></p>
+        </footer>
+    </body>
+</html>
