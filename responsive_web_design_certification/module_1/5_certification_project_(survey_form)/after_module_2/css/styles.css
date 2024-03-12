@@ -64,6 +64,7 @@ address {
     color: #ffffff;
     padding: 0.8em;
     text-align: center;
+    display: block;
 }
 
 .top-menu {
@@ -304,6 +305,84 @@ address {
 
 }
 
+@media (width: 375px) {
+
+    body {
+        padding-left: 15px;
+    }
+
+    footer {
+        margin-top: 45vw;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .off-screen-menu {
+        top: 0;
+        right: -450px;
+        width: 100%;
+        height: 100vh;
+        max-width: 450px;
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        text-align: center;
+        background-color: #4e3bca;
+        transition: .3s ease;
+    }
+    
+    .off-screen-menu.active {
+        right: 0;
+    }
+    
+    .menu-divider {
+        display: none;
+    }
+
+    .title > h1 {
+        padding-top: 30vw;
+        font-size: 30px;
+    }
+
+    .main-container {
+        height: 180vw;
+    }
+
+    .common-input {
+        width: 80vw;
+        display: block;
+    }
+
+    .form-img {
+        display: none;
+    }
+
+    .form-labels {
+        display: block;
+    }
+
+    .textarea-input {
+        min-height: 130px;
+        max-height: 400px;
+        min-width: 650px;
+        max-width: 650px;
+    }
+
+    .footer-divider {
+        display: none;
+    }
+
+    .footer-address {
+        margin-top: 15vw;
+    }
+
+}
+
 @media (max-width: 800px) {
 
     body {
@@ -334,6 +413,14 @@ address {
     .off-screen-menu.active {
         right: 0;
     }
+    
+    .menu-divider {
+        display: none;
+    }
+
+    .title {
+        padding-top: 30vw;
+    }
 
     .common-input {
         width: 80vw;
@@ -353,6 +440,14 @@ address {
         max-height: 400px;
         min-width: 340px;
         max-width: 340px;
+    }
+
+    .footer-divider {
+        display: none;
+    }
+
+    .footer-address {
+        margin-top: 10vw;
     }
 }
 
@@ -387,6 +482,10 @@ address {
         right: 0;
     }
 
+    .menu-divider {
+        display: none;
+    }
+
     .common-input {
         width: 80vw;
         display: block;
@@ -405,6 +504,10 @@ address {
         max-height: 400px;
         min-width: 340px;
         max-width: 340px;
+    }
+    
+    .menu-divider {
+        display: none;
     }
 }
 
