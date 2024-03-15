@@ -9,51 +9,53 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="off-screen-menu top-menu">
-                <ul>
-                    <li><a class="link-menu" href="#">Home</a></li>
-                    <li><a class="link-menu" href="#">Get your Card</a></li>
-                    <li><a class="link-menu" href="#">Our Company</a></li>
-                    <li><a class="link-menu" href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
-    <div class="menu-divider"></div>
-    <main>
-        <section>
-            <div class="main-container">
-                <form method="POST" action="/" class="form-panel">
-                    <div class="title">
-                        <h1>Issue Your Card</h1>
-                        <hr>
-                    </div>
-                    <label for="name" class="form-labels" aria-label="Name field - You can press Control + 0 to directly navigate to this field." accesskey="n" data-hotkey="Ctrl+0">Name:
-                        <input type="text"  id="name" name="name" placeholder="Full name" class="common-input" autocomplete="off" required>
-                    </label>
-                    <label for="email" class="form-labels" aria-label="E-mail field - You can press Control + 1 to directly navigate to this field." accesskey="m" data-hotkey="Ctrl+1">E-mail:
-                        <input type="email" id="email" name="email" placeholder="your-name@domain.com" class="common-input" autocomplete="off" required>
-                    </label>
-                    <label for="cellphone" class="form-labels" aria-label="Cellphone field - You can press Control + 2 to directly navigate to this field." accesskey="c" data-hotkey="Ctrl+2">Cellphone:
-                        <input type="tel" id="cellphone" name="cellphone" placeholder="+XX (XXX) XXXX-XXXX" class="common-input" autocomplete="off" required>
-                    </label>
-                    <label for="message" class="form-labels">Briefly describe why we should give you a card:
-                    </label>
-                    <textarea id="message" name="message" placeholder="I need a credit card to..." class="textarea-input" autocomplete="off" aria-label="Description field - You can press Alt + w to directly navigate to this field." accesskey="w"  data-hotkey="Alt+w" required></textarea>
-                    <button type="submit" role="button" aria-label="A Submit button to submit your information">Submit <img src="./assets/arrow_icon.png" alt="A thin white line arrow pointing to the right side"></button>
-                </form>
-                <div class="form-img">
-                    <img src="./assets/card.png" alt="A Credit Card image">
+        <div class="wrapper-main">
+            <nav>
+                <div class="off-screen-menu top-menu">
+                    <ul>
+                        <li><a class="link-menu" href="#">Home</a></li>
+                        <li><a class="link-menu" href="#">Get your Card</a></li>
+                        <li><a class="link-menu" href="#">Our Company</a></li>
+                        <li><a class="link-menu" href="#">Contact</a></li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-    </main>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+    </header>
+        <div class="menu-divider"></div>
+        <main>
+            <section>
+                <div class="main-container">
+                    <form method="POST" action="/" class="form-panel">
+                        <div class="title">
+                            <h1>Issue Your Card</h1>
+                            <hr>
+                        </div>
+                        <label for="name" class="form-labels" aria-label="Name field - You can press Control + 0 to directly navigate to this field." accesskey="n" data-hotkey="Ctrl+0">Name:
+                            <input type="text"  id="name" name="name" placeholder="Full name" class="common-input" autocomplete="off" required>
+                        </label>
+                        <label for="email" class="form-labels" aria-label="E-mail field - You can press Control + 1 to directly navigate to this field." accesskey="m" data-hotkey="Ctrl+1">E-mail:
+                            <input type="email" id="email" name="email" placeholder="your-name@domain.com" class="common-input" autocomplete="off" required>
+                        </label>
+                        <label for="cellphone" class="form-labels" aria-label="Cellphone field - You can press Control + 2 to directly navigate to this field." accesskey="c" data-hotkey="Ctrl+2">Cellphone:
+                            <input type="tel" id="cellphone" name="cellphone" placeholder="+XX (XXX) XXXX-XXXX" class="common-input" autocomplete="off" required>
+                        </label>
+                        <label for="message" class="form-labels">Briefly describe why we should give you a card:
+                        </label>
+                        <textarea id="message" name="message" placeholder="I need a credit card to..." class="textarea-input" autocomplete="off" aria-label="Description field - You can press Alt + w to directly navigate to this field." accesskey="w"  data-hotkey="Alt+w" required></textarea>
+                        <button type="submit" role="button" aria-label="A Submit button to submit your information">Submit <img src="./assets/arrow_icon.png" alt="A thin white line arrow pointing to the right side"></button>
+                    </form>
+                    <div class="form-img">
+                        <img src="./assets/card.png" alt="A Credit Card image">
+                    </div>
+                </div>
+            </section>
+        </main>
+        </div>
 </body>
     <div class="footer-divider"></div>
 <footer>
