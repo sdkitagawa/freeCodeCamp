@@ -1,0 +1,63 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.language": "en,pt-BR"
+	},
+	"extensions": {
+		"recommendations": [
+			"alefragnani.bookmarks",
+			"aaron-bond.better-comments",
+			"njpwerner.autodocstring",
+			"formulahendry.auto-rename-tag",
+			"streetsidesoftware.code-spell-checker-portuguese-brazilian",
+			"formulahendry.code-runner",
+			"streetsidesoftware.code-spell-checker",
+			"softwaredotcom.swdc-vscode",
+			"wallabyjs.console-ninja",
+			"pranaygp.vscode-css-peek",
+			"ms-vscode-remote.remote-containers",
+			"batisteo.vscode-django",
+			"ms-azuretools.vscode-docker",
+			"cschlosser.doxdocgen",
+			"helgardrichard.helium-icon-theme",
+			"github.github-vscode-theme",
+			"eamodio.gitlens",
+			"ms-python.isort",
+			"xabikos.javascriptsnippets",
+			"ms-vscode.vscode-typescript-next",
+			"ms-vscode.live-server",
+			"ritwickdey.liveserver",
+			"yzhang.markdown-all-in-one",
+			"yzane.markdown-pdf",
+			"pkief.material-icon-theme",
+			"equinusocio.vsc-material-theme-icons",
+			"be5invis.vscode-icontheme-nomo-dark",
+			"christian-kohler.npm-intellisense",
+			"zhuangtongfa.material-theme",
+			"analytic-signal.preview-pdf",
+			"johnpapa.vscode-peacock",
+			"esbenp.prettier-vscode",
+			"ms-python.vscode-pylance",
+			"donjayamanne.python-environment-manager",
+			"donjayamanne.python-extension-pack",
+			"kevinrose.vsc-python-indent",
+			"ms-vscode-remote.remote-ssh",
+			"ms-vscode-remote.remote-ssh-edit",
+			"ms-vscode.remote-explorer",
+			"humao.rest-client",
+			"ryu1kn.text-marker",
+			"rangav.vscode-thunder-client",
+			"deerawan.vscode-faker",
+			"vscode-icons-team.vscode-icons",
+			"ms-vscode-remote.remote-wsl",
+			"ms-dotnettools.csharp",
+			"dracula-theme.theme-dracula",
+			"lentedigital.vsc-extension-xp",
+			"designliquido.designliquido-vscode"
+		]
+	}
+}
