@@ -1,5 +1,12 @@
 # Using .NET C# Visual Studio Code (Local Environment)
 
+- [Using .NET C# Visual Studio Code (Local Environment)](#using-net-c-visual-studio-code-local-environment)
+  - [Requirements](#requirements)
+  - [Getting started](#getting-started)
+  - [Building Your Application](#building-your-application)
+  - [Running Your Application](#running-your-application)
+
+
 ## Requirements
 <details>
 <summary>Downloads</summary>
@@ -12,7 +19,6 @@
 
 </summary>
 </details>
-
 
 ## Getting started
 <ul>
@@ -46,6 +52,9 @@
 
 <br />
 
+
+## Building Your Application
+
 - Now that you understood how to use `CLI` it is time to generate your first console application, navigate to the desired folder for your project through the `Terminal` using these commands:
   - `cd` - *Change Directory*;
   - `cd ../` - *Change dir to a previous dir*;
@@ -62,6 +71,8 @@
     ---
         dotnet build
     ---
+
+## Running Your Application
 
 - The dotnet build command builds the project and its dependencies into a set of binaries. The `binaries`, the project's code in `Intermediate Language` (IL) files with a `*.dll` extension. Depending on the project type and settings, other files may also be included.
 - To run your application, run the following command:
