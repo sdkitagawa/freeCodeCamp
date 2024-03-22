@@ -54,9 +54,9 @@
 
 <br />
 
-- The `CLI` command will create a template to create a **new C# console application project** in the specified folder by creating a **CSharp Project file** (`*.csproj`), and a **CSharp Program File** (`*.cs`) that you are going to use to write your code.
-- Now open the **internal Terminal** from **Visual Studio Code** and make sure to navigate to the specified folder where it is located your project file.
-  - **Note**: Before running a build or run command, you must ensure that the Terminal is open to your project folder.
+- The `CLI` command will create a template to create a **new C# console application project** in the specified folder by creating a **CSharp Project file** (`*.csproj`), and a **CSharp Program File** (`*.cs`) that you are going to use to write your code;
+- Now open the **internal Terminal** from **Visual Studio Code** by accessing the **Visual Studio Code File Explorer** (`CTRL` or `Cmd` + `B`) and then right clicking the folder name and selecting the option **Open in Integrated Terminal**;
+  - **Note**: Before running a build or run command, you must ensure that the Terminal is open to your project folder;
 - Now run the following command in Terminal:
 
     ---
@@ -69,17 +69,3 @@
     ---
         dotnet run
     ---
-
-- With your Visual Studio Code opened press `CTRL` (Or `Cmd`) + `'` to open the Visual Studio Code terminal.
-- Now navigate to the desired folder by using the `cd` (Change Directory) terminal command.
-- Type the following command to create a new console application and be able to run your code:
-
-    ```terminal
-    dotnet new console -o ${appNameHere}
-    ```
-
-- You can use `dotnet run` to run your code.
-- Download these Visual Studio Code Extensions: `C# Dev Kit`, `C#` and `IntelliCode for C# Dev Kit` all these extensions are provided by `Microsoft`.
-- After installing those press `CTRL` (or `Cmd`) + `P` and type `> .NET Generate Assets for Build and Debug`.
-- Now press `CTRL` (or `Cmd`) + `P` again and type `>.NET New Project`.
-- Select the Type of the application and Directory.
