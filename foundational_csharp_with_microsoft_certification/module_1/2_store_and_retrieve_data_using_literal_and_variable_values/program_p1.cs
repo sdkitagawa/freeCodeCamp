@@ -42,7 +42,7 @@ Console.WriteLine(false);
  - Name your variables using Camel Case Notation (thisIscamelCase);
  - Use alphanumeric characters and underscore character (for special cases);
  - No special characters like: @, #, $, %, !;
- - Names must begin with an alphabetical leter or an underscore not a number;
+ - Names must begin with an alphabetical letter or an underscore not a number;
  - Variable names are case-sensitive;
  - Don't use contractions or abbreviations.
  - Don't include the data type of the variable name when using coding in typed languages (C#, C/C++, Java).
