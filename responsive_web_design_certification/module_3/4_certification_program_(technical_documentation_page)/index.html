@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--
+  Credits for the Template: freeCodeCamp.org
+  Content and Styling: sdkitagawa
+ -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <title>Aegis Core Documentation</title>
+</head>
+<body>
+  <aside>
+    <nav id="navbar">
+      <header>CoreSE Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#CoreSE">CoreSE</a></li>
+        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Declaring_Variables">Declaring Variables</a></li>
+        <li><a class="nav-link" href="#Variable_Scope">Variable Scope</a></li>
+        <li><a class="nav-link" href="#Prefix_Global_Variables">Prefix Global Variables</a></li>
+        <li><a class="nav-link" href="#Prefix_Client_Side_Variables">Prefix Client Side Variables</a></li>
+        <li><a class="nav-link" href="#Prefix_Global_Constant_Variables">Prefix Global Constant Variables</a></li>
+        <li><a class="nav-link" href="#Prefix_Local_Constant_Variables">Prefix Local Constant Variables</a></li>
+        <li><a class="nav-link" href="#Prefix_Instance_Variables">Prefix Instance Variables</a></li>
+        <li><a class="nav-link" href="#Postfix_Data_Type_Variables">Postfix Data Type Variables</a></li>
+        <li><a class="nav-link" href="#Array_Data_Type_Variables">Array Data Type Variables</a></li>
+        <li><a class="nav-link" href="#If_&_Else_Statement">If & Else Statement</a></li>
+        <li><a class="nav-link" href="#Switch_&_Case_Statement">Switch & Case Statement</a></li>
+        <li><a class="nav-link" href="#While_Statement">While Statement</a></li>
+        <li><a class="nav-link" href="#For_Statement">For Statement</a></li>
+        <li><a class="nav-link" href="#Do_Statement">Do Statement</a></li>
+        <li><a class="nav-link" href="#Freeloop_Statement">Freeloop Statement</a></li>
+        <li><a class="nav-link" href="#Function_Declarations">Function Declarations</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>CoreSE is a cross-platform, object-oriented scripting language that it was developed by Douglas Kitagawa based on C/C++ programming languages. It is a small and lightweight language. It is mainly used to hook applications.</p>
+      <p>CoreSE contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.</p>
+    </section>
+    <section class="main-section" id="CoreSE">
+      <header>CoreSE</header>
+      <p>CoreSE can also use the libraries from C/C++ and Lua. CoreSE it is very similar in some ways to C/C++ and Lua, but fundamentally different in some other aspects. The CoreSE language resembles C/C++ and Lua but does not have C/C++'s static typing and strong type checking and it is simple and flexible as Lua. CoreSE follows most of the C/C++ expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from Based C to CoreSE.</p>
+      <p>In contrast to C/C++'s compile-time system of classes built by declarations, CoreSE supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. CoreSE has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. CoreSE also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+      <p>CoreSE is a very free-form language compared to C/C++. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+    </section>
+    <section class="main-section" id="Hello_World">
+      <header>Hello World</header>
+      <p>To get started with writing CoreSE, open the Scratchpad and write your first "Hello world" CoreSE code:</p>
+      <code>OnPCLoginEvent:
+	message "Hello World!";</code>
+    </section>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+      <p>A CoreSE identifier must start with a letter or underscore (_); subsequent characters can also be digits (0-9). Because CoreSE is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+      <p>In CoreSE Variables are dived into two types:</p>
+      <ul>
+        <li>Prefix</li>
+        <li>Postfix</li>
+      </ul>
+      <p>Prefix variables are used to define the scope and extent of a variable.</p>
+      <p>Postfix variables are used to define the type of the variable between integer (positive and negative integer numbers) or string.</p>
+    </section>
+    <section class="main-section" id="Declaring_Variables">
+      <header>Declaring Variables</header>
+      <p>You can declare a variable in three ways:</p>
+      <p>The "$" before the "myVariable" word it's what we call it Variable Prefix.</p>
+      <p>For example,</p>
+      <code>set $myVariable$ = "Text";</code>
+      <code>set $myVariable$, "Text";</code>
+      <p>This syntax is used to declare global variables.</p>
+      <p>In this case the ".@" are the Variable Prefixes.</p>
+      <p>You can also use this way to declare a local variable:</p>
+      <code>set .@myVariable$ = "Text";</code>
+      <code>set .@myVariable$, "Text";</code>
+      <p>By using the ".@" symbols you will always declare a local variable.</p>
+    </section>
+    <section class="main-section" id="Variable_Scope">
+      <header>Variable Scope</header>
+      <p>When you declare a variable using $varName, it is called a global variable, because it is available to any other code in the current document. When you declare a variable using .@varName, it is called a local variable, because it is available only within that specific block of code.</p>
+      <p>This is important for scripts which are called with no RID attached, that is, not triggered by a specific client object.</p>
+    </section>
+    <section class="main-section" id="Prefix_Global_Variables">
+      <header>Prefix Global Variables</header>
+      <p>Global variables are in fact properties of the global object. In CoreSE Script file the global object is the whole Server Side, so you can set and access global variables.</p>
+      <p>Consequently, you can access global variables declared from different Client Sides. For example, if a variable called $userName is declared in a Script, you can refer to this variable from the Server Side and Client Side.</p>
+      <p>They are stored by Zone Server in the database table "mapreg"</p>
+    </section>
+    <section class="main-section" id="Prefix_Client_Side_Variables">
+      <header>Prefix Client Side Variables</header>
+      <p>They exist in the Client Side only and disappear when the Server Side restarts or when the Script is reloaded.</p>
+      <p>Can be accessed from inside the Client Side or by calling the function 'getvariableofpc'. Function objects can also have .variables which are accessible from inside the function, however 'getvariableofpc'does NOT work on function objects.</p>
+      <code>set .myVariable$ = "Text";</code>
+      <code>set .myVariable$, "Text";</code>
+    </section>
+    <section class="main-section" id="Prefix_Global_Constant_Variables">
+      <header>Prefix Global Constant Variables</header>
+      <p>Global variables are in fact properties of the global object. In CoreSE Script file the global object is the whole Server Side, so you can set and access global variables.</p>
+      <p>Consequently, you can access global variables declared from different Client Sides. For example, if a variable called $userName is declared in a Script, you can refer to this variable from the Server Side and Client Side.</p>
+      <p>A permanent global account variable stored by the Inter Server. They are stored in the "global_acc_reg_num" table and "global_acc_reg_str"</p>
+      <p>The only difference you will note from normal # variables is when you have multiple Inter Servers connected to the same Zone Server. The # variables are unique to each Inter Server, while the ## variables are shared by all these Inter Servers.</p>
+      <code>set ##myVariable = 250;</code>
+      <code>set ##myVariable, 250;</code>
+    </section>
+    <section class="main-section" id="Prefix_Local_Constant_Variables">
+      <header>Prefix Local Constant Variables</header>
+      <p>The Local Constants are stored by Inter Server in the "acc_reg_num" table and "acc_reg_str".</p>
+      <p>A permanent global account variable stored by the Inter Server. They are stored in the "global_acc_reg_num" table and "global_acc_reg_str"</p>
+      <code>set #myVariable = 250;</code>
+      <code>set #myVariable, 250;</code>
+    </section>
+    <section class="main-section" id="Prefix_Instance_Variables">
+      <header>Prefix Instance Variables</header>
+      <p>These are used with the instancing system and are unique to each instance type. Can be accessed from inside the instance or by calling 'getinstancevar'.</p>
+      <code>set 'myVariable = 250;</code>
+      <code>set 'myVariable, 250;</code>
+    </section>
+    <section class="main-section" id="Postfix_Data_Type_Variables">
+      <header>Postfix Data Type Variables</header>
+      <p>As previously stated in this documentation the Postfix is always used to define whether a variable is integer (positive, negative integer number. However whole numbers only) or string.</p>
+      <p>You can check all the Postfix Data Types possibilities bellow:</p>
+      <ul>
+        <li>varName  - Permanent Server Side integer variable.</li>
+        <li>varName$ - Permanent Server Side string variable.</li>
+        <li>@varName  - Temporary Server Side integer variable.</li>
+        <li>@varName$  - Temporary Server Side string variable.</li>
+        <li>$varName$  - Permanent Global string variable.</li>
+        <li>$@varName  - Temporary Global integer variable.</li>
+        <li>$@varName$  - Temporary Global string variable.</li>
+
+        <li>.varName  - Client Side integer variable.</li>
+        <li>.varName$  - Client Side string variable.</li>
+        <li>.@varName  - Scope integer variable.</li>
+        <li>.@varName$  - Scope string variable.</li>
+        <li>'varName  - Instance integer variable.</li>
+        <li>'varName$  - Instance string variable.</li>
+        <li>#varName  - Permanent Local Account Zone integer variable.</li>
+        <li>#varName$  - Permanent Local Account Zone string variable.</li>
+        <li>##varName  - Permanent Global integer variable.</li>
+        <li>##varName$  - Permanent Global string variable.</li>
+      </ul>
+      <p>You must always used the word "set" to define your variable, otherwise if a variable was never set, it is considered to equal zero for integer variables or an empty string ("", nothing between the quotes) for string variables or an empty string ("", nothing between the quotes) for string forever, and no trace remains of it even if it was stored with character or account data.</p>
+      <code>set #myVariable = 250;</code>
+      <code>set #myVariable, 250;</code>
+    </section>
+    <section class="main-section" id="Array_Data_Type_Variables">
+      <header>Array Data Type Variables</header>
+      <p>This command will allow you to quickly fill up an array in one go. Follow the pattern:</p>
+      <code>setarray {array name}[<first position>], <value>, <value>, <value>...;</code>
+      <code>setarray .@myArray[0], 200, 300, 150;</code>
+    </section>
+    <section class="main-section" id="If_&_Else_Statement">
+      <header>If & Else Statement</header>
+      <p>This is the basic conditional statement command, and just about the only one available in this scripting language. The condition can be any expression. All expressions resulting in a non-zero value will be considered True, including negative values. All expressions resulting in a zero are false.</p>
+      <p>If the expression results in True, the statement will be executed. If it isn't true, nothing happens and we move on to the next line of the script.</p>
+      <code>
+        if (1)  message "This will always print.";
+        if (0)  message "And this will never print.";
+        if (5)  message "This will also always print.";
+        if (-1) message "Funny as it is, this will also print just fine.";
+    </code>
+      <code>
+        .@answer = 1;
+        input .@input;
+        if (.@input == .@answer)
+        &emsp;&emsp;close;
+        &emsp;&emsp;message "Sorry, your answer is incorrect.";
+        close;
+      </code>
+    </section>
+    <section class="main-section" id="Switch_&_Case_Statement">
+      <header>Switch & Case Statement</header>
+      <p>The switch statement is similar to a series of if statements on the same expression. In many occasions, you may want to compare the same variable (or expression) with many different values, and execute a different piece of code depending on which value it equals to. This is exactly what the switch statement is for.</p>
+      <p>It is important to understand how the switch statement is executed in order to avoid mistakes. The switch statement executes line by line (actually, statement by statement). In the beginning, no code is executed. Only when a case statement is found with a value that matches the value of the switch expression the case statement(s) will to executed. The parser continues to execute the statements until the end of the switch block, or the first time it sees a break statement. If you don't write a break statement at the end of a case's statement list, the parser will go on executing the statements of the following case (fall-through).</p>
+      <p>Check the Example:</p>
+      <code>
+        switch(select("Yes:No")) {
+        case 1:
+        &emsp;&emsp;message "You said yes!";
+        &emsp;&emsp;break;
+        case 2:
+        &emsp;&emsp;message "Aww, why?";
+        &emsp;&emsp;break;
+        }
+      </code>
+    </section>
+    <section class="main-section" id="While_Statement">
+      <header>While Statement</header>
+      <p>This is probably the simplest and most frequently used loop structure. The 'while' statement can be interpreted as "while {condition} is true, perform {statement}".</p>
+      <p>It is a pretest loop, meaning the conditional expression is tested before any of the statements in the body of the loop are performed. If the condition evaluates to false, the statement(s) in the body of the loop is/are never executed. If the condition evaluates to true, the statement(s) are executed, then control transfers back to the conditional expression, which is reevaluated and the cycle continues.</p>
+      <p>Check the example below:</p>
+      <code>
+      while (10 >= 1)) {
+        &emsp;&emsp;doThis;
+      }
+      </code>
+    </section>
+    <section class="main-section" id="For_Statement">
+      <header>For Statement</header>
+      <p>Another pretest looping structure is the 'for' statement. It is considered a specialized form of the 'while' statement, and is usually associated with counter-controlled loops. Here are the steps of the 'for' statement: the initialize statement is executed first and only once. The condition test is performed. When the condition evaluates to false, the rest of the for statement is skipped. When the condition evaluates to true, the body of the loop is executed, then the update statement is executed (this usually involves incrementing a variable). Then the condition is reevaluated and the cycle continues.</p>
+      <code>
+      for( .@i = 1; .@i <= 5; .@i++ )
+      &emsp;&emsp;messsage "This line will print 5 times.";
+      </code>
+      <code>
+      message "This will print the numbers 1 - 5.";
+      for( .@i = 1; .@i <= 5; .@i++ )
+      &emsp;&emsp;message "Number: " + .@i;
+      </code>
+    </section>
+    <section class="main-section" id="Do_Statement">
+      <header>Do Statement</header>
+      <p>The 'do...while' is the only post-test loop structure available in this script language. With a post-test, the statements are executed once before the condition is tested. When the condition is true, the statement(s) are repeated. When the condition is false, control is transferred to the statement following the 'do...while' loop expression.</p>
+      <code>
+        messsage "This will countdown from 10 to 1.";
+        .@i = 10;
+        do {
+        &emsp;&emsp;message .@i;
+        &emsp;&emsp;.@i -= 1;
+        } while (.@i > 0);
+      </code>
+      <code>
+      message "This menu will keep appearing until you pick Cancel";
+      do {
+      &emsp;&emsp;.@menu = select("One:Two:Three:Cancel");
+      } while (.@menu != 4);
+        </code>
+    </section>
+    <section class="main-section" id="Freeloop_Statement">
+      <header>Freeloop Statement</header>
+      <p>Toggling this to enabled (1) allows the script instance to bypass the infinite loop protection, allowing your script to loop as much as it may need. Disabling (0) will warn you if an infinite loop is detected.</p>
+      <p>The command will return the state of freeloop for the attached script, even if no argument is provided.</p>
+      <code>
+        freeloop(1); // enable script to loop freely
+        
+        // be careful with what you do here
+        for ( .@i = 0; .@i < .@bigloop; .@i++ ) {
+        &emsp;&emsp;doThis;
+        
+        // will sleep the script for 1ms when detect an infinity loop to
+        // let Aegis do what it needs to do (socket, timer, process, etc.)
+	      }
+        
+        freeloop(0); // disable freeloop
+        
+        for ( .@i = 0; .@i < .@bigloop; .@i++ ) {
+        &emsp;&emsp;doThis;
+        // throw an infinity loop error
+        }
+      </code>
+    </section>
+    <section class="main-section" id="Function_Declarations">
+      <header>Function Declarations</header>
+      <ol>
+        <li>Declare the function.</li>
+        <li>Call the function anywhere within the script. It can also return a value when used with parentheses.</li>
+        <li>Define the function within the script.</li>
+      </ol>
+      <code>
+      function	script	try	{
+      &emsp;&emsp;doThat;
+      }
+
+      -	script	test	-1,{
+      &emsp;&emsp;.@try = is_function("try"); // 1
+      &emsp;&emsp;.@not = is_function("not"); // 0
+      }
+      </code>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
