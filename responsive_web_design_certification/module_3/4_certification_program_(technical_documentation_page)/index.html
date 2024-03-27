@@ -45,7 +45,7 @@
   <main id="main-doc">
     <section class="main-section" id="Introduction">
       <header class="header-control">Introduction</header>
-      <p><span class="code-scope">CoreSE</span> is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by <a href="https://github.com/sdkitagawa" target="_blank">Douglas Kitagawa</a>. It is a class-based concurrent scripting language and it can be integrated with [`Lua`](https://github.com/lua/lua) or `SQL`.</p>
+      <p><span class="code-scope">CoreSE</span> is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by <a href="https://github.com/sdkitagawa" target="_blank">Douglas Kitagawa</a>. It is a class-based concurrent scripting language and it can be integrated with <a href="https://github.com/lua/lua">Lua</a> or <span class="code-common">SQL</span>.</p>
       <p><span class="code-scope">CoreSE</span> also contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.</p>
       <p><span class="code-scope">CoreSE</span> supports procedural programming, object-oriented programming and functional programming. Thanks to special built-in methods, it can also be used as a prototype-based programming language.</p>
     </section>
@@ -351,7 +351,7 @@
       <h1>Second Example</h1>
       <code><span class="code-scope">.@answer</span> = <span class="code-number">1</span>;
         <span class="code-array-position">input</span> <span class="code-scope">.@input</span>;
-        <span class="code-function">if</span> <span class="code-keyword">(</span><span class="code-scope">.@input</span> <span class="code-keyword">==</span> <span class="code-scope">.@answer</span><span class="code-keyword">)</span>
+        <span class="code-function">if</span> <span class="code-keyword">(</span><span class="code-scope">.@input</span> <span class="code-common">==</span> <span class="code-scope">.@answer</span><span class="code-keyword">)</span>
         &emsp;&emsp;<span class="code-array-position">close</span><span class="code-keyword">;</span>
         &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string">"Sorry, your answer is incorrect."</span>;
         <span class="code-array-position">close</span><span class="code-keyword">;</span>
@@ -366,10 +366,10 @@
 
       <code><span class="code-function">switch</span>(<span class="code-function">select</span>(<span class="code-string">"Yes</span><span class="code-array-position">:</span><span class="code-string">No"</span>)) {
         <span class="code-scope">case 1</span>:
-        &emsp;&emsp;<span class="code-array-position">dialog</span> "You said yes!";
+        &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string">"You said yes!"</span>;
         &emsp;&emsp;<span class="code-array-position">break</span>;
         <span class="code-scope">case 2</span>:
-        &emsp;&emsp;<span class="code-array-position">dialog</span> "Aww, why?";
+        &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string">"Aww, why?"</span>;
         &emsp;&emsp;<span class="code-array-position">break</span>;
         }
       </code>
@@ -392,8 +392,8 @@
       <p>Another pretest looping structure is the 'for' statement. It is considered a specialized form of the 'while' statement, and is usually associated with counter-controlled loops. Here are the steps of the 'for' statement: the initialize statement is executed first and only once. The condition test is performed. When the condition evaluates to false, the rest of the for statement is skipped. When the condition evaluates to true, the body of the loop is executed, then the update statement is executed (this usually involves incrementing a variable). Then the condition is reevaluated and the cycle continues.</p>
 
       <h1>First Example</h1>
-      <code><span class="code-function">for</span>( <span class="code-common"><</span><span class="code-scope">.@i</span> = <span class="code-number">1</span>; <span class="code-scope">.@i</span> <span class="code-common"><=</span> <span class="code-number">5</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> )
-      &emsp;&emsp;<span class="code-array-position">dialog</span> "This line will print 5 times.";
+      <code><span class="code-function">for</span>( <span class="code-common"><</span><span class="code-scope">.@i</span> <span class="code-common">=</span> <span class="code-number">1</span>; <span class="code-scope">.@i</span> <span class="code-common"><=</span> <span class="code-number">5</span>; <span class="code-scope">.@i</span><span class="code-common">++</span> )
+      &emsp;&emsp;<span class="code-array-position">dialog</span> <span class="code-string"> "This line will print 5 times."</span>;
       </code>
 
       <h1>Second Example</h1>
