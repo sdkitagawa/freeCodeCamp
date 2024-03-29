@@ -15,7 +15,7 @@
 </head>
 <body>
   <label>
-    <input type="checkbox">
+    <input class="hamburger-menu" type="checkbox">
     <div class="toggle">
       <span class="top-line common"></span>
       <span class="middle-line common"></span>
@@ -57,8 +57,8 @@
   <main id="main-doc">
     <section class="main-section" id="Introduction">
       <header class="header-control">Introduction</header>
-      <p class="p-padding-bottom"><span class="code-scope">CoreSE</span> is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by <a href="https://github.com/sdkitagawa" target="_blank">Douglas Kitagawa</a>. It is a class-based concurrent scripting language and it can be integrated with <a href="https://github.com/lua/lua">Lua</a> or <span class="code-common">SQL</span>.</p>
-      <p class="p-padding-bottom"><span class="code-scope">CoreSE</span> also contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.</p>
+      <p class="paragraph-padding"><span class="code-scope">CoreSE</span> is a powerful, statically and strong typed, lightweight, embedded and a cross-platform, object-oriented scripting programming language written in C/C++, Client & Server side for Scripting Game Development and it was developed by <a href="https://github.com/sdkitagawa" target="_blank">Douglas Kitagawa</a>. It is a class-based concurrent scripting language and it can be integrated with <a href="https://github.com/lua/lua">Lua</a> or <span class="code-common">SQL</span>.</p>
+      <p class="paragraph-padding"><span class="code-scope">CoreSE</span> also contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.</p>
       <p><span class="code-scope">CoreSE</span> supports procedural programming, object-oriented programming and functional programming. Thanks to special built-in methods, it can also be used as a prototype-based programming language.</p>
     </section>
     <section class="main-section section-padding" id="CoreSE">
@@ -143,7 +143,7 @@
       <code><span class="code-common">set</span> <span class="code-scope">$firstVariable$</span>, <span class="code-string">"This is your first variable!"</span>;
       </code>
 
-      <p class="p-padding-top">The <span class="code-scope">$</span> before the <span class="code-scope">myVariable"</span> word it's what we call it Variable Prefix.</p>
+      <p class="paragraph-padding">The <span class="code-scope">$</span> before the <span class="code-scope">myVariable"</span> word it's what we call it Variable Prefix.</p>
       <p>For example,</p>
 
       <code><span class="code-keyword">set</span> <span class="code-scope">.@myVariable$</span> <span class="code-common">=</span> <span class="code-string">"Text"</span><span class="code-keyword">;</span>
@@ -440,8 +440,8 @@
     </section>
     <section class="main-section section-padding" id="Freeloop_Statement">
       <header>Freeloop Statement</header>
-      <p class="p-padding-left p-padding-top">Toggling this to enabled (1) allows the script instance to bypass the infinite loop protection, allowing your script to loop as much as it may need. Disabling (0) will warn you if an infinite loop is detected.</p>
-      <p class="p-padding-left p-padding-top">The command will return the state of freeloop for the attached script, even if no argument is provided.</p>
+      <p class="paragraph-padding">Toggling this to enabled (1) allows the script instance to bypass the infinite loop protection, allowing your script to loop as much as it may need. Disabling (0) will warn you if an infinite loop is detected.</p>
+      <p class="paragraph-padding">The command will return the state of freeloop for the attached script, even if no argument is provided.</p>
       <code><span class="code-scope">freeloop</span>(<span class="code-number">1</span>); <span class="code-comment">// Enable script to loop freely</span>
         
         <span class="code-comment">// Be careful with what you do here</span>

@@ -94,36 +94,6 @@ a:active {
     background: var(--secondary-black);
 }
 
-input {
-    display: none;
-    visibility: hidden;
-    appearance: initial;
-    -webkit-appearance: none;
-}
-
-input:checked ~ .toggle .top-line {
-    top: 14px;
-    left: 2px;
-    width: 25px;
-    transform: rotate(45deg);
-}
-
-input:checked ~ .toggle .middle-line {
-    opacity: 0;
-    transform: translateX(20px);
-}
-
-input:checked ~ .toggle .bottom-line {
-    top: 14px;
-    left: 2px;
-    width: 25px;
-    transform: rotate(-45deg);
-}
-
-input:checked ~ .slide {
-    transform: translateX(0);
-}
-
 section li {
     margin: 0.4rem 0 0 1rem;
 }
@@ -218,7 +188,7 @@ table {
     display: none;
     cursor: pointer;
     border-radius: 2px;
-    position: absolute;
+    position: absolute !important;
     background-color: var(--default-black);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -226,7 +196,7 @@ table {
 .toggle .common {
     width: 1.25rem;
     height: 0.125rem;
-    position: absolute;
+    position: absolute !important;
     border-radius: 3.125rem;
     transition: 0.3s ease;
     background-color: var(--default-white);
@@ -250,16 +220,39 @@ table {
     transform: translate(-50%, -50%);
 }
 
-.p-padding-top {
-    padding-top: 1.2rem;
+.hamburger-menu {
+    display: none !important;
+    visibility: hidden !important;
+    appearance: initial !important;
+    -webkit-appearance: none !important;
+    overflow: scroll !important;
 }
 
-.p-padding-bottom {
+.hamburger-menu:checked ~ .toggle .top-line {
+    top: 14px;
+    left: 2px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+.hamburger-menu:checked ~ .toggle .middle-line {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.hamburger-menu:checked ~ .toggle .bottom-line {
+    top: 14px;
+    left: 2px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+.hamburger-menu:checked ~ .slide {
+    transform: translateX(0);
+}
+
+.paragraph-padding {
     padding-bottom: 1.2rem;
-}
-
-.p-padding-left {
-    padding-left: 1.2rem;
 }
 
 .section-padding {
@@ -327,9 +320,9 @@ table {
     left: 0;
     height: 100%;
     width: 18.75rem;
-    position: fixed;
-    overflow-y: auto;
-    overflow-x: hidden;
+    position: fixed !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
     max-width: 28.125rem;
     min-width: 18.75rem;
     font-size: 0.940rem;
@@ -345,7 +338,7 @@ table {
 #navbar li {
     width: 100%;
     list-style: none;
-    position: relative;
+    position: relative !important;
     color: var(--default-white);
 }
 
@@ -379,16 +372,16 @@ table {
         width: 35px;
         margin-top: 28px;
         margin-left: 60px;
-        position: absolute;
+        position: absolute !important;
     }
 
     .slide {
-        position: fixed;
+        position: fixed !important;
         transform: translateX(-18.75rem);
     }
 
     .toggle {
-        position: fixed;
+        position: fixed !important;
         display: inline-block;
     }
 
@@ -406,8 +399,8 @@ table {
         border: none;
         color: var(--default-nav-mobile);
         position: relative;
-        max-height: 100vh;
-        overflow-y: auto;
+        max-height: 100vh !important;
+        overflow-y: auto !important;
         background-color: var(--default-black);
         border-bottom: 1px solid var(--secondary-black);
     }
