@@ -1,0 +1,6 @@
+obj/
+bin/
+freeCodeCamp.sln
+.vscode/settings.json
+.vscode/extensions.json
+freeCodeCamp's Environment.code-workspace
