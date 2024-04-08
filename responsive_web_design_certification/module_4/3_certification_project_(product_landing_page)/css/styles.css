@@ -231,13 +231,6 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-image: url("../assets/images/sign-up.png");
-}
-
-.bg-six {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
     background-image: url("../assets/images/contact.png");
 }
 
@@ -354,7 +347,6 @@ footer {
     color: var(--color-depths-blue);
     width: 100%;
     height: 50px;
-    border: none;
     outline: none;
     margin-top: 10px;
     margin-left: 0 auto;
