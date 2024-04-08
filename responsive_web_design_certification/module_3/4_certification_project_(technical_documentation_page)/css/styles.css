@@ -433,3 +433,33 @@ table {
       margin-left: -20px;
     }
 }
+
+@media only screen and (max-width: 398px) {
+    code {
+      margin-left: .5rem;
+    }
+
+    #main-doc {
+      margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    code {
+      margin-left: .5rem;
+    }
+
+    #main-doc {
+      margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    code {
+      margin-left: .5rem;
+    }
+
+    #main-doc {
+      margin-left: 1rem;
+    }
+}
