@@ -380,6 +380,10 @@ footer {
     background-color: #051454;
 }
 
+.input-margin {
+    margin-bottom: 2rem;
+}
+
 /*
     Dynamic Background Colors
     jQuery and Scroller.js dependant
