@@ -1,25 +1,3 @@
-<style>
-    summary {
-        font-size: 1.3rem;
-    }
-
-    a {
-        color: #4493f8;
-    }
-
-    a:hover {
-        color: #589ef8;
-    }
-
-    a:visited {
-        color: #7fb2f4;
-    }
-
-    a:active {
-        color: #1d65d4;
-    }
-</style>
-
 # freeCodeCamp Courses and Projects
 This repository was created to store the content developed during my freeCodeCamp certification projects.
 
