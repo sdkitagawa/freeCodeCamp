@@ -73,17 +73,17 @@ button:hover {
 
 .input-radio {
   margin-right: 10px;
-  min-height: 28px;
+  min-height: 14px;
   min-width: 25px;
   vertical-align: middle;
 }
 
 .input-checkbox {
-  display: block;
+  display: inline-block;
   margin-right: 8px;
   width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  min-height: 14px;
+  min-width: 50px;
   cursor: pointer;
 }
 
