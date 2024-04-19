@@ -26,4 +26,3 @@ Use [this](https://sdkitagawa.github.io/freeCodeCamp/) link to start navigating!
 ## Foundational C# with Microsoft
 
 - [C# Projects](https://github.com/sdkitagawa/freeCodeCamp/tree/main/foundational_csharp_with_microsoft_certification)
-
