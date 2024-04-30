@@ -545,6 +545,20 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1920px) {
+    p {
+        font-size: 1rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: justify;
+        letter-spacing: .005rem;
+    }
+    .top-padding-h1 {
+        padding-top: 9rem;
+    }
+}
+
 @media only screen and (max-width: 1280px) {
     p {
         font-size: 1rem;
@@ -560,13 +574,13 @@ footer {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 540px) {
     .top-padding-h1 {
         padding-top: 9rem;
     }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 400px) {
     .top-padding-h1 {
         padding-top: 9rem;
     }
